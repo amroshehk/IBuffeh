@@ -1,0 +1,42 @@
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_weight="1">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        tools:context="com.applefish.ibuffeh.MapsActivity">
+
+    </fragment>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_buffet"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp" android:orientation="horizontal"
+    android:weightSum="1"
+    android:layout_weight="0.1">
+    <Spinner
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.6"
+        android:id="@+id/citiesSpinner"/>
+    <Button android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.4"
+        android:text="Next"
+        android:id="@+id/btn1"/>
+</LinearLayout>
+
+</LinearLayout>
